@@ -1,32 +1,23 @@
-import Carousel from "./Carousel";
-const images:string[] = []
-for (let i = 1; i <= 13; i++) {
-        images.push(require(`../images/${i+1}.png`));
-    }
-const Esquemas = () => {
-    // const images = [
-    //     "images/1.png",
-    //     "images/2.png",
-    //     "../images/3.png",
-    //     "../images/4.png",
-    //     "../images/5.png",
-    //     "../images/6.png",
-    //     "../images/7.png",
-    //     "../images/8.png",
-    //     "../images/9.png",
-    //     "../images/10.png",
-    //     "../images/11.png",
-    //     "../images/12.png",
-    //     "../images/13.png",
 
-    //     // Agrega más imágenes aquí según sea necesario
-    // ];
-    
+import React, { useEffect, useState } from "react";
+import importAllImages from "./imageImports";
+import Carousel from "./Carousel";
+
+const Esquemas: React.FC = () => {
+    const [images, setImages] = useState<string[]>([]);
+
+    useEffect(() => {
+        const loadImages = async () => {
+            const loadedImages = await importAllImages();
+            setImages(loadedImages);
+        };
+
+        loadImages();
+    }, []);
 
     return (
         <div className="app">
-            <h1>Carousel Example</h1>
-            <Carousel images={images} />
+            {images.length > 0 && <Carousel images={images} />}
         </div>
     );
 };
