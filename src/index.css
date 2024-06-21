@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body{
-  background: #202020;
+  background: #dddddd;
   color: white;
-  
 }

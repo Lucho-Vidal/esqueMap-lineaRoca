@@ -4,6 +4,7 @@ import PrivateRoute from './PrivateRoute';
 import Esquemas from '../components/Esquemas'
 import Navbar from "../components/Navbar";
 import PdfViewer from '../components/PdfViewer';
+import Esquemap from "../components/SvgComponent";
 
 function Routers() {
     return (
@@ -14,6 +15,7 @@ function Routers() {
                 <Route element={<PrivateRoute />}>
                     <Route path="/croquis" element={<PdfViewer  fileUrl="../assets/Croquis Velocidades LGR.pdf"/>} />
                     <Route path="/esquemas" element={<Esquemas />} />
+                    <Route path="/esquemap" element={<Esquemap />} />
                 </Route>
                 <Route path="*" element={<Navigate to="/esquemas" />} />
             </Routes>

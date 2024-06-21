@@ -54,6 +54,10 @@ const Navbar: React.FC = () => {
                             Croquis
                         </Link>
 
+                        <Link to="/esquemap" className="text-white mx-3">
+                            Esquemap
+                        </Link>
+
                         <button onClick={handleLogout} className="text-white">
                             Cerrar sesión
                         </button>
