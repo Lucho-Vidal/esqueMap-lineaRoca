@@ -8,9 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@types/openseadragon':
+        specifier: ^3.0.10
+        version: 3.0.10
       firebase:
         specifier: ^10.12.2
         version: 10.12.2
+      openseadragon:
+        specifier: ^4.1.1
+        version: 4.1.1
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -719,6 +725,9 @@ packages:
   '@types/node@20.13.0':
     resolution: {integrity: sha512-FM6AOb3khNkNIXPnHFDYaHerSv8uN22C91z098AnGccVu+Pcdhi+pNUFDi0iLmPIsVE0JBD0KVS7mzUYt4nRzQ==}
 
+  '@types/openseadragon@3.0.10':
+    resolution: {integrity: sha512-nNVlu9PUNDVTudkSqVWhHtghCsyzQrJObEtN5zsVN2ghh5HYAC6U6xAcT9NQRfVfZVZkWXEYp2Hw7hQgwRxqgg==}
+
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
 
@@ -1332,6 +1341,9 @@ packages:
 
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
+
+  openseadragon@4.1.1:
+    resolution: {integrity: sha512-owU9gsasAcobLN+LM8lN58Xc2VDSDotY9mkrwS/NB6g9KX/PcusV4RZvhHng2RF/Q0pMziwldf62glwXoGnuzg==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -2446,6 +2458,8 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/openseadragon@3.0.10': {}
+
   '@types/prop-types@15.7.12': {}
 
   '@types/react-dom@18.3.0':
@@ -3108,6 +3122,8 @@ snapshots:
   once@1.4.0:
     dependencies:
       wrappy: 1.0.2
+
+  openseadragon@4.1.1: {}
 
   optionator@0.9.4:
     dependencies:

@@ -1,23 +1,26 @@
 interface PdfViewerProps {
     fileUrl: string;
 }
-import pdfFile from "../assets/Croquis Velocidades LGR.pdf";
+import pdfFile from "../images/esquemap-lineaRoca.pdf";
+import SvgComponent from './SvgComponent';
 
 const PdfViewer: React.FC<PdfViewerProps> = () => {
+
+        
+
     return (
         <div className="App">
             <object
                 data={pdfFile}
                 type="application/pdf"
                 width="100%"
-                height="950"
+                height="1200px"
             >
-                <p>
-                    Alternative text - include a link{" "}
-                    <a href="http://africau.edu/images/default/sample.pdf">
-                        to the PDF!
-                    </a>
-                </p>
+                
+                <div style={{ width: "100%", height: "100%" }}>
+                                <SvgComponent />
+                            </div>
+                    
             </object>
         </div>
     );
