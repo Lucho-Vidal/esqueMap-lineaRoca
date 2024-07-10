@@ -3,7 +3,7 @@ import LoginPage from "../pages/LoginPage";
 import PrivateRoute from "./PrivateRoute";
 import Esquemas from "../components/Esquemas";
 import Navbar from "../components/Navbar";
-import PdfViewer from "../components/PdfViewer";
+import Esquemap from '../components/esquemap';
 
 
 function Routers() {
@@ -15,20 +15,9 @@ function Routers() {
                 <Route element={<PrivateRoute />}>
                     <Route
                         path="/esquemap"
-                        element={
-                            <PdfViewer fileUrl="../images/esquemap-lineaRoca.pdf" />
-                        }
+                        element={<Esquemap />}
                     />
-                    <Route path="/esquemas" element={<Esquemas />} />
-                    {/* <Route
-                        path="/esquemap"
-                        element={
-                            <div style={{ width: "100%", height: "100%" }}>
-                                <SvgComponent />
-                            </div>
-                        }
-                    /> */}
-                    
+                    <Route path="/esquemas" element={<Esquemas />} />                   
                 </Route>
                 <Route path="*" element={<Navigate to="/esquemap" />} />
             </Routes>
