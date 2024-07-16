@@ -65,13 +65,11 @@ const Navbar: React.FC = () => {
                     </button>
                 </div>
                 <div
-                    className={`lg:flex lg:items-center ${
-                        isOpen ? "block" : "hidden"
-                    }`}
+                    className={`lg:flex lg:items-center ${isOpen ? "block" : "hidden"}`}
                 >
                     {/* <div className="flex space-x-4"> */}
                     {isLoggedIn ? (
-                        <div className="lg:flex lg:space-x-4">
+                        <div className="flex flex-col lg:flex-row lg:space-x-4 space-y-2 lg:space-y-0">
                             
                             <Link to="/esquemap" className="text-white mx-3">
                                 Esquemap
@@ -81,7 +79,7 @@ const Navbar: React.FC = () => {
                             </Link>
                             <button
                                 onClick={handleLogout}
-                                className="text-white"
+                                className="text-white mx-3"
                             >
                                 Cerrar sesión
                             </button>

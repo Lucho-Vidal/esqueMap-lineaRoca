@@ -37,4 +37,13 @@ body, html {
 
 iframe {
     border: none;
+    width: 80%; /* Ancho para pantallas grandes */
+    height: 100vh; /* Altura para pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    iframe {
+        width: 100%; /* Ancho para dispositivos móviles */
+        height: 100vh; /* Altura para dispositivos móviles */
+    }
 }
